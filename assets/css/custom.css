@@ -1,0 +1,25 @@
+#feature2,
+#consultation {
+  background-color: #1a286d !important;
+}
+
+#consultation .container {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-img img {
+  width: 30px;
+}
+
+img.pull-right {
+  max-width: 130% !important;
+}
+
+#patients {
+  background-color: #1a286d !important;
+}
+
+/* h2.heading-title {
+  color: white;
+} */

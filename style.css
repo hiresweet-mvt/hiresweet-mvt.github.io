@@ -243,7 +243,6 @@ h3 {
   grid-gap: 7.5%;
   padding: 0 7.5%;
   margin: 7.5em 0;
-  flex-wrap: wrap;
 }
 
 .client-card {
@@ -300,12 +299,15 @@ h4 {
   border: solid 2px #f9c8ca;
 }
 
-#typeform {
-  height: calc(80vh - 4em);
+.our-form {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #eeeeee;
+}
+
+.form-img img {
+  width: 350px;
 }
 
 footer {
@@ -431,4 +433,49 @@ footer {
 }
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .bottom-left {
+    display: none;
+    visibility: hidden;
+  }
+
+  .middle-right {
+    display: none;
+    visibility: hidden;
+  }
+
+  .testimony-content h2 {
+    margin: 1em;
+  }
+
+  .form-img {
+    display: none;
+    visibility: hidden;
+  }
+
+  .client-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "client1" "client2" "client3";
+  }
+
+  .client-card {
+    height: 16em;
+    margin-bottom: 5em;
+  }
+
+  .client-card h4 {
+    top: -5em;
+  }
+
+  .client-card p {
+    text-align: center;
+    top: -6.5em;
+  }
+
+  footer {
+    padding: 0 1em;
+  }
 }
